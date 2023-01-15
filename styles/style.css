@@ -178,3 +178,77 @@ nav li {
   padding: 40px 0;
   text-align: center;
 }
+
+/*
+   Media Quaries
+ */
+/* For Mobile Device */
+@media only screen and (max-width: 668px) {
+  .container {
+    padding: 0;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  .nav .logo {
+    text-align: center;
+  }
+  .nav ul li {
+    margin: 0;
+    font-weight: 700;
+  }
+  /* Banner Responsive */
+  .banner-content {
+    padding: 0;
+  }
+  .banner-title {
+    font-size: 50px;
+  }
+  .banner img {
+    margin-top: 30px;
+  }
+  /* Team Section */
+  .team {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .team-image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-image img {
+    width: 100%;
+    height: auto;
+  }
+  .features{
+    flex-direction: column;
+    margin: 0 15px;
+  }
+  .features-image img{
+    width: 100%;
+  }
+  .btn-primary.large{
+    margin: -100px 0 0 0;
+  }
+  .sponsor-icon{
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin: 0 20px;
+  }
+  .glance{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 0 20px;
+  }
+  .fact-title{
+    margin: 50px 20px 0 20px;
+  }
+  .fact-des{
+    margin: 10px 20px 20px 20px;
+  }
+}
